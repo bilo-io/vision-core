@@ -5,8 +5,8 @@ export interface IBlueprint {
     name: string,
     /** `category`: the type of the document */
     category?: string,
-    /** `description`: a simple description of the template */
-    content: string,
+    /** `content`: a simple description of the template */
+    content?: string,
     /** `sections`: a list of the different high-level sections */
     sections?: {
         name: string,
