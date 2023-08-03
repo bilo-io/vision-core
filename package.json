@@ -13,6 +13,7 @@
   },
   "scripts": {
     "changelog": "auto-changelog -p && git add CHANGELOG.md",
+    "version": "yarn changelog",
     "dev": "yarn build:watch",
     "build": "npx tsc && bash ./scripts/build-dist.sh",
     "build:watch": "npx tsc -w",

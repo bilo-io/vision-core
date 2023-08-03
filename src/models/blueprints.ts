@@ -1,16 +1,18 @@
 export interface IBlueprint {
-    // unique identifier of the blueprint
-    id: string;
-    // the name of the document
-    name: string;
-    // the type of the document
-    category: string;
-    // a list of the different high-level sections
+    /** `id`: unique identifier of the blueprint */
+    id: string,
+    /** `name`: the name of the document */
+    name: string,
+    /** `category`: the type of the document */
+    category: string,
+    /** `description`: a simple description of the template */
+    description: string,
+    /** `sections`: a list of the different high-level sections */
     sections: {
-        name: string;
-        description?: string;
-        content?: any | any[];
-    }[];
-    // description for the look and feel
-    aesthetic: string;
+        name: string,
+        description?: string,
+        content?: any | any[],
+    }[],
+    /** `aesthetic?`: description for the look and feel */
+    aesthetic?: string,
 }
