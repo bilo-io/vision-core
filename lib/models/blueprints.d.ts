@@ -4,11 +4,11 @@ export interface IBlueprint {
     /** `name`: the name of the document */
     name: string;
     /** `category`: the type of the document */
-    category: string;
+    category?: string;
     /** `description`: a simple description of the template */
-    description: string;
+    content: string;
     /** `sections`: a list of the different high-level sections */
-    sections: {
+    sections?: {
         name: string;
         description?: string;
         content?: any | any[];
