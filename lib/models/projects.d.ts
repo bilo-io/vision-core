@@ -4,20 +4,10 @@ export interface IProject {
     /** `name`:  the name of the project */
     name: string;
     /** `sections`:  the various sections the project has */
-    sections?: Section[];
-    /** `sectionCount`: the number of sections when the project gets returned in a list */
-    sectionCount?: number;
-    /** `templateId?`:  the optional template from which the project was created*/
-    templateId?: string | number;
-    /** `collectionId?`:  the optional collection the project belongs to */
-    collectionId?: string | number;
-    /** `userPrompt?`:  */
-    userPrompt?: string;
-}
-export interface Section {
-    name: string;
-    type: 'Text' | 'Image' | 'Audio' | 'Video';
-    data: any;
-    displayOrder: number;
-    children?: Section[];
+    documents: {
+        id: string | number;
+        name: string;
+        data: any;
+        type?: string | 'text' | 'gallery' | 'slides';
+    }[];
 }
