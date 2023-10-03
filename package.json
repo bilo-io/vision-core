@@ -1,8 +1,8 @@
 {
-  "name": "@aims/core",
+  "name": "@vision/core",
   "author": "Bilo Lwabona",
   "version": "0.0.1",
-  "description": "A Typescript library for frontend and backend shared code of the A.I.M.S. platform.",
+  "description": "A Typescript library for frontend and backend shared code of the Vision platform.",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "files": [
