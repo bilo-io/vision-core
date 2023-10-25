@@ -30,6 +30,7 @@ export interface IMedia {
 export interface IDialogue {
     id: string;
     name?: string;
+    type: IMediaType;
     actors?: {
         id: string;
         name: string;
