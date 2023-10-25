@@ -22,7 +22,7 @@ export interface IVideo {
     id: string;
 }
 
-export type IMediaType = 'Image' | 'Sound' | 'Video' | 'Gallery'
+export type IMediaType = 'Image' | 'Sound' | 'Video' | 'Dialogue'
 
 export interface IMedia {
     uri?: string;
@@ -52,5 +52,5 @@ export interface IGallery {
     id: string;
     name: string;
     type: IMediaType;
-    media: IImage[] | ISound[] | IVideo[] | IGallery[];
+    media: IImage[] | ISound[] | IVideo[] | IDialogue[];
 }
