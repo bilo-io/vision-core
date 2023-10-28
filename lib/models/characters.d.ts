@@ -1,17 +1,18 @@
 import { IMediaType } from "./galleries";
 export interface ICharacter {
     id: string;
-    alias: string;
+    alias?: string;
     type?: IMediaType;
-    name: ICharacterName;
-    traits: ICharacterTraits;
-    demographics: ICharacterDemographics;
-    identity: ICharacterIdentity;
-    background: ICharacterBackground;
+    name?: ICharacterName;
+    traits?: ICharacterTraits;
+    demographics?: ICharacterDemographics;
+    identity?: ICharacterIdentity;
+    background?: ICharacterBackground;
 }
 export interface ICharacterName {
     firstName?: string;
     lastName?: string;
+    nickName?: string;
 }
 export interface ICharacterTraits {
     personality: ICharacterPersonality[];

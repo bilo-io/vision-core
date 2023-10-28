@@ -2,13 +2,13 @@ import { IMediaType } from "./galleries";
 
 export interface ICharacter {
     id: string;
-    alias: string;
+    alias?: string;
     type?: IMediaType;
-    name: ICharacterName;
-    traits: ICharacterTraits;
-    demographics: ICharacterDemographics;
-    identity: ICharacterIdentity;
-    background: ICharacterBackground;
+    name?: ICharacterName;
+    traits?: ICharacterTraits;
+    demographics?: ICharacterDemographics;
+    identity?: ICharacterIdentity;
+    background?: ICharacterBackground;
     // TODO: Add any other relevant properties of a character.
 }
 
@@ -16,6 +16,7 @@ export interface ICharacter {
 export interface ICharacterName {
     firstName?: string;
     lastName?: string;
+    nickName?: string;
     // TODO: Middle name, nicknames, titles, etc.
 }
 
