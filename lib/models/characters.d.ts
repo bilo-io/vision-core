@@ -8,7 +8,7 @@ export interface ICharacter {
     demographics?: ICharacterDemographics;
     identity?: ICharacterIdentity;
     background?: ICharacterBackground;
-    images?: string;
+    images?: string[];
 }
 export interface ICharacterName {
     firstName?: string;
