@@ -58,6 +58,12 @@ export type ICharacterGender = 'MALE' | 'FEMALE' | 'NONE' | 'OTHER' | 'PREFER_NO
 export type ICharacterSexuality = 'HETEROSEXUAL' | 'HOMOSEXUAL' | 'BISEXUAL' | 'ASEXUAL' | 'PANSEXUAL' | 'OTHER' | 'PREFER_NOT_TO_SAY';
 
 // Custom types for traits
-type ICharacterPersonality = 'Honest' | 'Creative' | 'Confident' | 'Adventurous' | 'Introverted' | 'Extroverted' | 'Loyal' | 'Ambitious' | 'Empathetic' | 'Optimistic' | 'Pessimistic' | 'Cautious' | 'Impulsive' | 'Analytical' | 'Charismatic' | string;
-type ICharacterSkills = 'Coding' | 'Problem Solving' | 'Leadership' | 'Communication' | 'Time Management' | 'Negotiation' | 'Cooking' | 'Painting' | 'Music' | 'Writing' | 'Public Speaking' | 'Teamwork' | 'Mechanical Engineering' | 'Data Analysis' | 'Foreign Languages' | string;
-type ICharacterAbilities = 'Super Strength' | 'Telekinesis' | 'Invisibility' | 'Time Travel' | 'Shape-Shifting' | 'Healing' | 'Mind Reading' | 'Pyrokinesis' | 'Flight' | 'Telepathy' | 'Elasticity' | 'X-ray Vision' | 'Phasing' | 'Electrokinesis' | 'Immortality' | string;
+export type ICharacterPersonality = 'Honest' | 'Creative' | 'Confident' | 'Adventurous' | 'Introverted' | 'Extroverted' | 'Loyal' | 'Ambitious' | 'Empathetic' | 'Optimistic' | 'Pessimistic' | 'Cautious' | 'Impulsive' | 'Analytical' | 'Charismatic' | string;
+export type ICharacterSkills = 'Coding' | 'Problem Solving' | 'Leadership' | 'Communication' | 'Time Management' | 'Negotiation' | 'Cooking' | 'Painting' | 'Music' | 'Writing' | 'Public Speaking' | 'Teamwork' | 'Mechanical Engineering' | 'Data Analysis' | 'Foreign Languages' | string;
+export type ICharacterAbilities = 'Super Strength' | 'Telekinesis' | 'Invisibility' | 'Time Travel' | 'Shape-Shifting' | 'Healing' | 'Mind Reading' | 'Pyrokinesis' | 'Flight' | 'Telepathy' | 'Elasticity' | 'X-ray Vision' | 'Phasing' | 'Electrokinesis' | 'Immortality' | string;
+
+export const genders: ICharacterGender[] = ['MALE', 'FEMALE', 'NONE', 'OTHER', 'PREFER_NOT_TO_SAY'];
+export const sexualities: ICharacterSexuality[] = ['HETEROSEXUAL', 'HOMOSEXUAL', 'BISEXUAL', 'ASEXUAL', 'PANSEXUAL', 'OTHER', 'PREFER_NOT_TO_SAY'];
+export const personalities: ICharacterPersonality[] = ['Honest', 'Creative', 'Confident', 'Adventurous', 'Introverted', 'Extroverted', 'Loyal', 'Ambitious', 'Empathetic', 'Optimistic', 'Pessimistic', 'Cautious', 'Impulsive', 'Analytical', 'Charismatic'];
+export const skills: ICharacterSkills[] = ['Coding', 'Problem Solving', 'Leadership', 'Communication', 'Time Management', 'Negotiation', 'Cooking', 'Painting', 'Music', 'Writing', 'Public Speaking', 'Teamwork', 'Mechanical Engineering', 'Data Analysis', 'Foreign Languages'];
+export const abilities: ICharacterAbilities[] = ['Super Strength', 'Telekinesis', 'Invisibility', 'Time Travel', 'Shape-Shifting', 'Healing', 'Mind Reading', 'Pyrokinesis', 'Flight', 'Telepathy', 'Elasticity', 'X-ray Vision', 'Phasing', 'Electrokinesis', 'Immortality'];
