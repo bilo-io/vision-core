@@ -10,7 +10,9 @@ export type IDialogueIntent = 'STATEMENT' | 'QUESTION' | 'COMMAND' | 'REQUEST' |
 export type IDialogueGesture = 'SMILE' | 'LAUGH' | 'CRY' | 'SHRUG' | 'NOD' | 'SHAKE HEAD' | 'WAVE' | 'POINT' | 'CLAP' | 'SIGH' | 'HUG' | 'HANDSHAKE' | 'APPLAUSE' | 'THUMBS UP' | 'THUMBS DOWN' | 'FIST PUMP';
 
 export interface IDialogue {
+    /** `id`: the unique identifier of the Dialogue */
     id: string;
+    /** `id`: the human-friendly name of the Dialogue */
     name?: string;
     type: IMediaType;
     actors?: {
@@ -20,6 +22,10 @@ export interface IDialogue {
         voice?: string;
     }[];
     data?: IDialogueLine[];
+    /** `projectId`: the project this Document belongs to */
+    projectId: string | number;
+    /** `galleryId?`: the gallery this Document belongs to */
+    galleryId?: string | number;
 }
 export interface IDialogueLine {
     text: string;            // The spoken text.

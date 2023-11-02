@@ -3,7 +3,7 @@ export type IGeneratorType = 'Audio' | 'Image' | 'Text' | 'Video'
 export interface IGenerator {
     /**`id`: the unique identifier of the AI generator */
     id: string;
-    /**`name`: the name of the AI generator */
+    /**`name`: the human-friendly name of the AI generator */
     name: string,
     /**`type`: the type of the AI generator.
      *

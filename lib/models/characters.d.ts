@@ -8,6 +8,8 @@ export interface ICharacter {
     demographics?: ICharacterDemographics;
     identity?: ICharacterIdentity;
     background?: ICharacterBackground;
+    projectId: string;
+    galleryId?: string;
     images?: string[];
 }
 export interface ICharacterName {

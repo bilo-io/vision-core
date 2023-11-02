@@ -9,6 +9,8 @@ export interface ICharacter {
     demographics?: ICharacterDemographics;
     identity?: ICharacterIdentity;
     background?: ICharacterBackground;
+    projectId: string;
+    galleryId?: string;
     images?: string[];
     // TODO: Add any other relevant properties of a character.
 }

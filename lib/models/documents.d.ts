@@ -1,7 +1,7 @@
 export interface IDocument {
     /** `id`: the unique identifier of the Document */
     id: string | number;
-    /** `name`:  the name of the document */
+    /** `name`:  the human-friendly name of the Document */
     name: string;
     /** `sections`:  the various sections the document has */
     sections?: Section[];
@@ -13,6 +13,10 @@ export interface IDocument {
     collectionId?: string | number;
     /** `userPrompt?`:  */
     userPrompt?: string;
+    /** `projectId`: the project this Document belongs to */
+    projectId: string | number;
+    /** `galleryId?`: the gallery this Document belongs to */
+    galleryId?: string | number;
 }
 export interface Section {
     name: string;
