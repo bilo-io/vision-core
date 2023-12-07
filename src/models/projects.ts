@@ -5,6 +5,8 @@ export interface IProject {
     name: string;
     /** `a project image`:  the various sections the project has */
     image?: string;
+    /**`a list of features`: the sidebar tabs offered by vision studio */
+    features?: string[];
     /** `a project summary`: */
     executiveSummary: string;
 }
