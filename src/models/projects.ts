@@ -14,7 +14,9 @@ export interface IProject {
         /**  `titleImage` is to render the game title in a specific image (custom artwork) */
         titleImage: string,
         /** `slides` are general images to show in the slideshow */
-        slides?: string[]
+        slides?: string[],
+        /** `thumbAlign` translates to `background-position` CSS property */
+        thumbAlign: string,
     },
     /**`a list of features`: the sidebar tabs offered by vision studio */
     features?: string[];

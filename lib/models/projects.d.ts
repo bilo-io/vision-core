@@ -15,6 +15,8 @@ export interface IProject {
         titleImage: string;
         /** `slides` are general images to show in the slideshow */
         slides?: string[];
+        /** `thumbAlign` translates to `background-position` CSS property */
+        thumbAlign: string;
     };
     /**`a list of features`: the sidebar tabs offered by vision studio */
     features?: string[];
