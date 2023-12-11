@@ -9,8 +9,8 @@ export interface IProject {
     images?: {
         /** `coverImage` used to show the general splash/cover/background art */
         coverImage: string;
-        /**  `tileImage` is like the thumbnail */
-        tileImage: string;
+        /**  `thumbImage` is the image of the thumbnail */
+        thumbImage: string;
         /**  `titleImage` is to render the game title in a specific image (custom artwork) */
         titleImage: string;
         /** `slides` are general images to show in the slideshow */
