@@ -3,8 +3,21 @@ export interface IProject {
     id: string | number;
     /** `name`:  the human-friendly name of the project */
     name: string;
-    /** `image`:  the image of a project (to be `deprecated`) */
-    image?: string;
+    /** `audio`: is a selection of songs to give a flavour of the soundtrack */
+    audio?: {
+        /** `theme` is the classic song of this project */
+        theme?: string;
+        /** `action` is the normal combat music */
+        action?: string;
+        /** `epic` is usually the soundtrack for a boss battle of sorts, more elevated than `action` music */
+        epic?: string;
+        /** `explore` is the background music when exploring */
+        explore?: string;
+        /** `idle`: is the background music when in a safe zone */
+        idle?: string;
+        /** `tactical` is a soundtrack that could be used for a planning or stealth phase */
+        tactical?: string;
+    };
     /** `images`?:  the various different images of a projec, like an app store page  */
     images?: {
         /** `coverImage` used to show the general splash/cover/background art */
