@@ -1,4 +1,4 @@
-export interface IBlueprint {
+export interface ILocation {
     // unique identifier of the lication
     id: string;
     // the name of the location
