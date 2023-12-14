@@ -7,6 +7,7 @@ export * from './features';
 export * from './galleries';
 export * from './generators';
 export * from './images';
+export * from './locations';
 export * from './projects';
 export * from './sounds';
 export * from './subscriptions';
