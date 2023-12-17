@@ -4,7 +4,7 @@ export interface IDocument {
     /** `name`:  the human-friendly name of the Document */
     name: string;
     /** `sections`:  the various sections the document has */
-    sections?: Section[];
+    sections?: IEditorJSBlock[];
     /** `sectionCount`: the number of sections when the document gets returned in a list */
     sectionCount?: number;
     /** `templateId?`:  the optional template from which the document was created*/
@@ -18,10 +18,43 @@ export interface IDocument {
     /** `galleryId?`: the gallery this Document belongs to */
     galleryId?: string | number;
 }
-export interface Section {
-    name: string;
-    type: 'Text' | 'Image' | 'Audio' | 'Video';
-    data: any;
-    displayOrder: number;
-    children?: Section[];
-}
+export type IEditorJSBlock = {
+    type: "paragraph";
+    data: {
+        text: string;
+    };
+} | {
+    type: "header";
+    data: {
+        text: string;
+        level: number;
+    };
+} | {
+    type: "list";
+    data: {
+        type: "unordered" | "ordered";
+        items: (string | IEditorJSBlock)[];
+    };
+} | {
+    type: "attaches";
+    data: {
+        file: {
+            url: string;
+            size: number;
+            name: string;
+            extension: string;
+        };
+        title: string;
+    };
+} | {
+    type: "image";
+    data: {
+        file: {
+            url: string;
+        };
+        withBorder: boolean;
+        withBackground: boolean;
+        stretched: boolean;
+        caption: string;
+    };
+};
