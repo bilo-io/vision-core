@@ -6,7 +6,7 @@ export interface IControls {
     /** `id`: the function of each button */
     data: {
         /** key-value pairs for each control setting */
-        [key in ControlType]: string | {
+        [key in ControlType]?: string | {
             name: string,
             description: string,
         };
