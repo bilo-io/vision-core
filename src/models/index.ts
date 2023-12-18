@@ -1,5 +1,6 @@
 export * from './blueprints'
 export * from './characters'
+export * from './controls'
 export * from './credits'
 export * from './dialogues'
 export * from './documents'
