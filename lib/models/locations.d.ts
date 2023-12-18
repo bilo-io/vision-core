@@ -1,6 +1,8 @@
+import { IEditorJSBlock } from "./documents";
 export interface ILocation {
-    id: string;
+    id?: string;
     name: string;
     description?: string;
     images?: string[];
+    blocks?: IEditorJSBlock[];
 }
