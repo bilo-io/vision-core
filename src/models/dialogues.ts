@@ -27,6 +27,7 @@ export interface IDialogue {
     /** `galleryId?`: the gallery this Document belongs to */
     galleryId?: string | number;
 }
+
 export interface IDialogueLine {
     text: string;            // The spoken text.
     delay?: number;          // An optional delay before displaying the dialogue (in milliseconds).
