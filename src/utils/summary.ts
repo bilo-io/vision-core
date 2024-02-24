@@ -76,5 +76,9 @@ export const characterSummary = (character: ICharacter): string => {
         // result += `Occupationally, ${pronoun?.he} is/was a ${character?.background?.occupation || 'unknown'}. `;
     }
 
+    if (character?.story) {
+        result += character.story;
+    }
+
     return result;
 }
