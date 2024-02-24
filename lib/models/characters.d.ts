@@ -11,6 +11,7 @@ export interface ICharacter {
     projectId: string;
     galleryId?: string;
     images?: string[];
+    story?: any | any[];
 }
 export interface ICharacterName {
     firstName?: string;
