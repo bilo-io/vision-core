@@ -12,6 +12,7 @@ export interface ICharacter {
     projectId: string;
     galleryId?: string;
     images?: string[];
+    story?: any | any[];
     // TODO: Add any other relevant properties of a character.
 }
 
