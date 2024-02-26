@@ -1,4 +1,5 @@
-import { ICharacter } from "../models";
+import { IEditorJSBlock } from './../models/documents';
+import { ICharacter, ILocation } from "../models";
 
 export const characterSummary = (character: ICharacter): string => {
     let result = '';
@@ -34,18 +35,25 @@ export const characterSummary = (character: ICharacter): string => {
         result += `${pronoun.he} ${isGenderOther ? 'are' : 'is'} also known as ${character.alias}. `
     }
 
+    if (character?.story) {
+        result += character?.story;
+    }
+
     if (Number(character.traits?.personality?.length) > 0) {
-        const joinedData: string = character?.traits?.personality.join(', ') as string
+        const data = character?.traits?.personality || [];
+        const joinedData: string = data.slice(0, data.length - 1).join(', ') as string + `... and ${data[data.length - 1]}`
         result += joinedData?.length > 0 ? `${characterName} is categorised as ${joinedData}. ` : ''
     }
 
     if (Number(character?.traits?.skills?.length) > 0) {
-        const joinedData: string = character?.traits?.skills.join(', ') as string;
+        const data = character?.traits?.skills || [];
+        const joinedData: string = data.slice(0, data.length - 1).join(', ') as string + `... and ${data[data.length - 1]}`
         result += joinedData?.length > 0 ? `${pronoun.his} primary skills are ${joinedData}. ` : ''
     }
 
     if (Number(character?.traits?.specialAbilities?.length) > 0) {
-        const joinedData: string = character?.traits?.specialAbilities.join(', ') as string;
+        const data = character?.traits?.specialAbilities || [];
+        const joinedData: string = data.slice(0, data.length - 1).join(', ') as string + `... and ${data[data.length - 1]}`
         result += joinedData?.length > 0 ? `${pronoun.he} specialises in ${joinedData}. ` : ''
     }
 
@@ -70,15 +78,41 @@ export const characterSummary = (character: ICharacter): string => {
     result += '\n\n'
 
     if (character?.background) {
-        result += `${pronoun?.he} is of ${character?.background?.nationality || 'unknown'} nationality. `;
+        // result += `${pronoun?.he} is of ${character?.background?.nationality || 'unknown'} nationality. `;
         // result += `Speaks ${character?.background?.language || 'unknown'} as the native language. `;
         result += `Educationally, ${pronoun?.he} has a background in ${character?.background?.education || 'unknown'}. `;
         // result += `Occupationally, ${pronoun?.he} is/was a ${character?.background?.occupation || 'unknown'}. `;
     }
 
-    if (character?.story) {
-        result += character.story;
+    return result;
+}
+
+export const locationSummary = (location: ILocation): string => {
+    let result = '';
+
+    // Add the location name
+    result += location.name || '';
+
+    // Add the location description
+    if (location.description) {
+        result += `, ${location.description}. `;
+    }
+
+    // Add lore if available
+    if (location.lore) {
+        result += `The location has a rich lore: ${location.lore}. `;
+    }
+
+    // Add plot details if available
+    if (location.plot) {
+        result += `In the context of the story, it plays a significant role: ${location.plot}. `;
+    }
+
+    if (location.blocks) {
+        location.blocks?.forEach((block: IEditorJSBlock) => (
+            result += `${JSON.stringify(block?.data)}`
+        ))
     }
 
     return result;
-}
+};
