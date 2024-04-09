@@ -9,7 +9,7 @@ export interface IUser {
     /**  email address of the user, retrieved from the SSO method */
     email?: string;
     /** whether or not that email address has been verified by the user */
-    emailVerified?: string;
+    emailVerified?: boolean;
     /** the access token used for the session */
     token?: string;
     /** indicates whether the user isAdmin */
