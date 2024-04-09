@@ -12,4 +12,6 @@ export interface IUser {
     emailVerified?: string;
     /** the access token used for the session */
     token?: string;
+    /** indicates whether the user isAdmin */
+    isAdmin?: boolean;
 }
