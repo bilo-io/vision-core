@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Switch.style.css'; // You can create a CSS file for styling
+import './Switch.style.css';
 
 interface SwitchProps {
     label?: string;

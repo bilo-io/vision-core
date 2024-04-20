@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Switch = void 0;
 const jsx_runtime_1 = require("react/jsx-runtime");
 const react_1 = require("react");
-require("./Switch.style.css"); // You can create a CSS file for styling
+require("./Switch.style.css");
 const Switch = ({ label, onChange, defaultValue, isSwitchLeft, isJustifyBetween }) => {
     const [checked, setChecked] = (0, react_1.useState)(defaultValue);
     const toggleSwitch = () => {
