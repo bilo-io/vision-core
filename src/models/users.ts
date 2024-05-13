@@ -1,9 +1,11 @@
+export type AuthMethod = 'Email' | 'Google' | 'Facebook' | 'Apple' | 'Github';
+
 export interface IUser {
     id?: string | number;
     /** the display name of the user */
     name?: string;
     /** the SSO auth method used by the user */
-    authMethod: 'Email' | 'Google' | 'Facebook' | 'Apple';
+    authMethod: AuthMethod;
     /** the profile picture of the user */
     image?: string;
     /**  email address of the user, retrieved from the SSO method */
