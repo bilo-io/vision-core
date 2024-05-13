@@ -12,3 +12,4 @@ export interface IVideo {
     /** `galleryId?`: the gallery this Video belongs to */
     galleryId?: string | number;
 }
+//# sourceMappingURL=videos.d.ts.map

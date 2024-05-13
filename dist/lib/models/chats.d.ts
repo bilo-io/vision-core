@@ -8,3 +8,4 @@ export interface IChatMessage {
     message: string;
 }
 export type IChatSender = 'USER' | 'SYSTEM';
+//# sourceMappingURL=chats.d.ts.map

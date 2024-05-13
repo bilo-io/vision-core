@@ -10,3 +10,4 @@ interface CustomIconProps {
 }
 export declare const CustomIcon: React.FC<CustomIconProps>;
 export default CustomIcon;
+//# sourceMappingURL=CustomIcon.d.ts.map

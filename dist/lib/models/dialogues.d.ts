@@ -34,3 +34,4 @@ export interface IDialogueLine {
     context?: string;
     action?: string;
 }
+//# sourceMappingURL=dialogues.d.ts.map

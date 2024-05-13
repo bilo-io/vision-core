@@ -4,3 +4,4 @@ export declare const TechIcon: React.FC<{
     size?: number;
 }>;
 export default TechIcon;
+//# sourceMappingURL=TechIcon.d.ts.map

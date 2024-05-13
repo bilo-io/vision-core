@@ -51,3 +51,4 @@ export declare const sexualities: ICharacterSexuality[];
 export declare const personalities: ICharacterPersonality[];
 export declare const skills: ICharacterSkills[];
 export declare const abilities: ICharacterAbilities[];
+//# sourceMappingURL=characters.d.ts.map

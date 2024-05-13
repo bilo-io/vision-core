@@ -7,3 +7,4 @@ export interface TechIconProps {
     /** `color` in hex format */
     color?: string;
 }
+//# sourceMappingURL=types.d.ts.map

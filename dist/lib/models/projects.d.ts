@@ -36,3 +36,4 @@ export interface IProject {
     /** `a project summary`: */
     executiveSummary: string;
 }
+//# sourceMappingURL=projects.d.ts.map

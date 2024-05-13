@@ -1,3 +1,5 @@
+export type SSOAuthProvider = 'GOOGLE' | 'FACEBOOK' | 'GITHUB';
+
 export interface IUser {
     id?: string | number;
     /** the display name of the user */
@@ -14,4 +16,6 @@ export interface IUser {
     token?: string;
     /** indicates whether the user isAdmin */
     isAdmin?: boolean;
+    // ** the provider used for SSO
+    ssoProvider: SSOAuthProvider;
 }

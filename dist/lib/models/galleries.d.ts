@@ -22,3 +22,4 @@ export interface IGallery {
     projectId: string | number;
     media: ICharacter[] | IDocument[] | IDialogue[] | IImage[] | ISound[] | IVideo[];
 }
+//# sourceMappingURL=galleries.d.ts.map

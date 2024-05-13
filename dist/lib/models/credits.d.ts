@@ -6,3 +6,4 @@ export interface ICredits {
     /** `totalSpent`: the total number of credits the customer has spent */
     totalSpent?: number;
 }
+//# sourceMappingURL=credits.d.ts.map

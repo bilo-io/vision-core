@@ -14,5 +14,7 @@ export * from './locations';
 export * from './projects';
 export * from './sounds';
 export * from './subscriptions';
+export * from './tenants';
 export * from './users';
 export * from './videos';
+//# sourceMappingURL=index.d.ts.map

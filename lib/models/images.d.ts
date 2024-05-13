@@ -13,3 +13,4 @@ export interface IImage {
     /** `type`:  */
     type: IMediaType;
 }
+//# sourceMappingURL=images.d.ts.map

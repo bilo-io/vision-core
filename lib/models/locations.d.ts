@@ -8,3 +8,4 @@ export interface ILocation {
     images?: string[];
     blocks?: IEditorJSBlock[];
 }
+//# sourceMappingURL=locations.d.ts.map

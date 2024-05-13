@@ -12,3 +12,4 @@ export interface ISound {
     /** `galleryId?`: the gallery this Sound belongs to */
     galleryId?: string | number;
 }
+//# sourceMappingURL=sounds.d.ts.map

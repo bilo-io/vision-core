@@ -7,3 +7,4 @@ export interface CompanyIconProps {
 }
 export declare const CompanyIcon: React.FC<CompanyIconProps>;
 export default CompanyIcon;
+//# sourceMappingURL=CompanyIcon.d.ts.map

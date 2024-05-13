@@ -16,3 +16,4 @@ export interface IBlueprint {
     /** `aesthetic?`: description for the look and feel */
     aesthetic?: string;
 }
+//# sourceMappingURL=blueprints.d.ts.map

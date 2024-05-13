@@ -4,3 +4,4 @@ interface CountDownProps {
 }
 export declare const CountDown: React.FC<CountDownProps>;
 export default CountDown;
+//# sourceMappingURL=Countdown.d.ts.map

@@ -9,3 +9,4 @@ declare const _default: {
     toTitleCase: (str: string) => string;
 };
 export default _default;
+//# sourceMappingURL=casing.d.ts.map

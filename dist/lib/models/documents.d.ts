@@ -58,3 +58,4 @@ export type IEditorJSBlock = {
         caption: string;
     };
 };
+//# sourceMappingURL=documents.d.ts.map

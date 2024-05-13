@@ -11,3 +11,4 @@ export interface IFeature {
     /** `updatedAt` is the last date at which the feature was updated */
     updatedAt?: string;
 }
+//# sourceMappingURL=features.d.ts.map

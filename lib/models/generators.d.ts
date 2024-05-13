@@ -21,3 +21,4 @@ export interface IGenerator {
         [key in string]: string;
     };
 }
+//# sourceMappingURL=generators.d.ts.map

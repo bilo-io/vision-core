@@ -21,3 +21,4 @@ export interface INode {
         label: string;
     };
 }
+//# sourceMappingURL=graphs.d.ts.map
