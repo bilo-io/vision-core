@@ -1,3 +1,5 @@
+import { ISubscription } from "./subscriptions";
+
 export type AuthMethod = 'Email' | 'Google' | 'Facebook' | 'Apple' | 'Github';
 
 export interface IUser {
@@ -16,4 +18,6 @@ export interface IUser {
     token?: string;
     /** indicates whether the user isAdmin */
     isAdmin?: boolean;
+    /** the `subscription` of the user */
+    subscription?: ISubscription;
 }
