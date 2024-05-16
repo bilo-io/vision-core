@@ -37,12 +37,12 @@ export interface ICharacterDemographics {
     age: string | number; // Age (e.g., can include 'unknown')
     gender: ICharacterGender; // Gender
     sexuality: ICharacterSexuality; // Sexuality
+    ethnicity?: string; // Ethnicity or racial background
+    religion?: string; // Religious affiliation
 }
 
 // Identity properties
 export interface ICharacterIdentity {
-    ethnicity?: string; // Ethnicity or racial background
-    religion?: string; // Religious affiliation
     genderIdentity?: string; // Gender identity
     sexualOrientation?: string; // Detailed sexual orientation
     pronouns?: string; // Preferred pronouns

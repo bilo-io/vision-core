@@ -68,8 +68,8 @@ export const characterSummary = (character: ICharacter): string => {
     result += '\n\n'
 
     if (character?.identity) {
-        result += `${pronoun?.he} is of ${character?.identity?.ethnicity || 'unknown'} ethnicity. `;
-        result += `As for religion, ${pronoun?.he} follows ${character?.identity?.religion || 'no specific religion'}. `;
+        result += `${pronoun?.he} is of ${character?.demographics?.ethnicity || 'unknown'} ethnicity. `;
+        result += `As for religion, ${pronoun?.he} follows ${character?.demographics?.religion || 'no specific religion'}. `;
         // result += `Identity-wise, ${pronoun?.he} identifies as ${character?.identity?.genderIdentity || 'unknown'}. `;
         // result += `In terms of sexual orientation, ${pronoun?.he} is ${character?.identity?.sexualOrientation?.toLowerCase()}. `;
         // result += `Preferred pronouns are ${character?.identity?.pronouns || 'unknown'}. `;
