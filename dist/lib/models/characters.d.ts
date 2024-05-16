@@ -27,10 +27,10 @@ export interface ICharacterDemographics {
     age: string | number;
     gender: ICharacterGender;
     sexuality: ICharacterSexuality;
-    ethnicity?: string;
-    religion?: string;
 }
 export interface ICharacterIdentity {
+    ethnicity?: string;
+    religion?: string;
     genderIdentity?: string;
     sexualOrientation?: string;
     pronouns?: string;
