@@ -1,6 +1,8 @@
 export interface IProject {
     /** `id`: the unique identifier of the Project */
     id: string | number;
+    /** `ref`: the unique ref to the Project */
+    ref?: string,
     /** `name`:  the human-friendly name of the project */
     name: string;
     /** `audio`: is a selection of songs to give a flavour of the soundtrack */
@@ -35,4 +37,36 @@ export interface IProject {
     features?: string[];
     /** `a project summary`: */
     executiveSummary: string;
+    /** content rating, indicating the minimum maturity level required to consume this media */
+    contentRating?: {
+        age: number;
+        hasNudity: boolean;
+        hasSex: boolean;
+        hasViolence: boolean;
+        hasLanguage: boolean;
+        isRRated: boolean;
+        // Add more content types as needed
+        hasDrugUse: boolean;
+        hasAlcoholUse: boolean;
+        hasGambling: boolean;
+        hasScaryElements: boolean;
+        hasOnlineInteractions: boolean;
+    };
+    /** the `platforms` on which the final media will be consumable  */
+    targetPlatforms?: IProjectPlatform[];
+    /** the `technologies` used to create the final media  */
+    technologies?: IProjectTechnology[];
 }
+
+export type IProjectPlatform =
+    'unity' |
+    'godot' |
+    'apple' |
+    'ios' |
+    'android' |
+    'windows' |
+    'xbox' |
+    'nintendo' |
+    'switch' | string;
+
+export type IProjectTechnology = IProjectPlatform | string;
