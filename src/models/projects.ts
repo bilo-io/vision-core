@@ -5,6 +5,8 @@ export interface IProject {
     ref?: string,
     /** `name`:  the human-friendly name of the project */
     name: string;
+    /** `templateId`: the template from which this project was generated  */
+    templateId?: string;
     /** `audio`: is a selection of songs to give a flavour of the soundtrack */
     audio?: {
         /** `theme` is the classic song of this project */
@@ -59,14 +61,20 @@ export interface IProject {
 }
 
 export type IProjectPlatform =
-    'unity' |
-    'godot' |
+    'playstation' |
+    'nintendo' |
+    'xbox' |
+    'windows' |
+    'android' |
     'apple' |
     'ios' |
-    'android' |
-    'windows' |
-    'xbox' |
-    'nintendo' |
-    'switch' | string;
+    string;
 
-export type IProjectTechnology = IProjectPlatform | string;
+export type IProjectTechnology =
+    'unrealengine' |
+    'unity' |
+    'godot' |
+    'gamemaker' |
+    'cryengine' |
+    'gdevelop' |
+    string;

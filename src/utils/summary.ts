@@ -1,4 +1,4 @@
-import { IEditorJSBlock } from './../models/documents';
+import { IEditorJSBlock } from '../models/features/documents';
 import { ICharacter, ILocation } from "../models";
 
 export const characterSummary = (character: ICharacter): string => {

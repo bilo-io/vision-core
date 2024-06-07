@@ -1,8 +1,12 @@
 export interface IProject {
     /** `id`: the unique identifier of the Project */
     id: string | number;
+    /** `ref`: the unique ref to the Project */
+    ref?: string;
     /** `name`:  the human-friendly name of the project */
     name: string;
+    /** `templateId`: the template from which this project was generated  */
+    templateId?: string;
     /** `audio`: is a selection of songs to give a flavour of the soundtrack */
     audio?: {
         /** `theme` is the classic song of this project */
@@ -35,4 +39,24 @@ export interface IProject {
     features?: string[];
     /** `a project summary`: */
     executiveSummary: string;
+    /** content rating, indicating the minimum maturity level required to consume this media */
+    contentRating?: {
+        age: number;
+        hasNudity: boolean;
+        hasSex: boolean;
+        hasViolence: boolean;
+        hasLanguage: boolean;
+        isRRated: boolean;
+        hasDrugUse: boolean;
+        hasAlcoholUse: boolean;
+        hasGambling: boolean;
+        hasScaryElements: boolean;
+        hasOnlineInteractions: boolean;
+    };
+    /** the `platforms` on which the final media will be consumable  */
+    targetPlatforms?: IProjectPlatform[];
+    /** the `technologies` used to create the final media  */
+    technologies?: IProjectTechnology[];
 }
+export type IProjectPlatform = 'playstation' | 'nintendo' | 'xbox' | 'windows' | 'android' | 'apple' | 'ios' | string;
+export type IProjectTechnology = 'unrealengine' | 'unity' | 'godot' | 'gamemaker' | 'cryengine' | 'gdevelop' | string;

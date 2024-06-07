@@ -1,9 +1,6 @@
-export interface IControls {
-    /** `id`: unique identifier of the control scheme */
-    id?: string;
-    /** `name`: of the control scheme */
-    name: string;
-    /** `id`: the function of each button */
+import { IResource } from "../resource";
+
+export interface IControls extends IResource {
     data: {
         /** key-value pairs for each control setting */
         [key in ControlType]?: string | {

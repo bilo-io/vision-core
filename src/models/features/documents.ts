@@ -1,8 +1,6 @@
-export interface IDocument {
-    /** `id`: the unique identifier of the Document */
-    id: string | number;
-    /** `name`:  the human-friendly name of the Document */
-    name: string;
+import { IResource } from "../resource";
+
+export interface IDocument extends IResource {
     /** `sections`:  the various sections the document has */
     blocks?: IEditorJSBlock[];
     /** `sectionCount`: the number of sections when the document gets returned in a list */
@@ -13,10 +11,6 @@ export interface IDocument {
     collectionId?: string | number;
     /** `userPrompt?`:  */
     userPrompt?: string;
-    /** `projectId`: the project this Document belongs to */
-    projectId: string | number;
-    /** `galleryId?`: the gallery this Document belongs to */
-    galleryId?: string | number;
 }
 
 // export interface Section {

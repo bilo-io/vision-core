@@ -1,6 +1,6 @@
-export interface IGraph {
-    id?: string,
-    name?: string;
+import { IResource } from "../resource"
+
+export interface IGraph extends IResource {
     data: {
         edges: IEdge[],
         nodes: INode[],
@@ -21,5 +21,10 @@ export interface INode {
     type: string,
     data: {
         label: string,
+        id: string,
+    },
+    position: {
+        x: number,
+        y: number,
     }
 }

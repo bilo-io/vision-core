@@ -1,6 +1,6 @@
-export interface IChat {
-    id?: string;
-    name: string;
+import { IResource } from "../resource";
+
+export interface IChat extends IResource {
     messages: IChatMessage[],
 }
 

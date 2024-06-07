@@ -1,4 +1,5 @@
-import { IMediaType } from "./galleries";
+import { IMediaType } from "../galleries";
+import { IResource } from "../resource";
 
 // Custom types for additional properties
 export type IDialogueTone = 'SAD' | 'HAPPY' | 'ANGRY' | 'CALM' | 'EXCITED' | 'SERIOUS' | 'PLAYFUL' | 'CONFUSED' | 'GRATEFUL' | 'LOVING' | 'HUMOROUS' | 'SARCASTIC' | 'APOLOGETIC' | 'ENCOURAGING' | 'THOUGHTFUL' | 'FRIGHTENED' | 'SURPRISED' | 'DISAPPOINTED' | 'AMUSED' | 'ANXIOUS' | 'GRUMPY' | 'HOPEFUL';
@@ -9,11 +10,7 @@ export type IDialogueIntent = 'STATEMENT' | 'QUESTION' | 'COMMAND' | 'REQUEST' |
 
 export type IDialogueGesture = 'SMILE' | 'LAUGH' | 'CRY' | 'SHRUG' | 'NOD' | 'SHAKE HEAD' | 'WAVE' | 'POINT' | 'CLAP' | 'SIGH' | 'HUG' | 'HANDSHAKE' | 'APPLAUSE' | 'THUMBS UP' | 'THUMBS DOWN' | 'FIST PUMP';
 
-export interface IDialogue {
-    /** `id`: the unique identifier of the Dialogue */
-    id: string;
-    /** `id`: the human-friendly name of the Dialogue */
-    name?: string;
+export interface IDialogue extends IResource {
     type: IMediaType;
     actors?: {
         id: string;
@@ -22,10 +19,6 @@ export interface IDialogue {
         voice?: string;
     }[];
     data?: IDialogueLine[];
-    /** `projectId`: the project this Document belongs to */
-    projectId: string | number;
-    /** `galleryId?`: the gallery this Document belongs to */
-    galleryId?: string | number;
 }
 
 export interface IDialogueLine {

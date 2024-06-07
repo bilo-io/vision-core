@@ -1,9 +1,9 @@
-import { ICharacter } from "./characters";
-import { IDialogue } from "./dialogues";
-import { IDocument } from "./documents";
-import { IImage } from "./images";
-import { ISound } from "./sounds";
-import { IVideo } from "./videos";
+import { ICharacter } from "./features/characters";
+import { IDialogue } from "./features/dialogues";
+import { IDocument } from "./features/documents";
+import { IImage } from "./ai/images";
+import { ISound } from "./ai/sounds";
+import { IVideo } from "./ai/videos";
 export type IMediaType = 'Character' | 'Dialogue' | 'Document' | 'Image' | 'Sound' | 'Video';
 export interface IMedia {
     uri?: string;

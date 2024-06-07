@@ -9,6 +9,7 @@ export interface ICharacter {
     identity?: ICharacterIdentity;
     background?: ICharacterBackground;
     projectId: string;
+    /** `galleryId`: the folder name in which this resource belongs */
     galleryId?: string;
     images?: string[];
     story?: any | any[];
