@@ -113,8 +113,8 @@ const character = {
         age: 21,
         gender: 'MALE'
     },
-    alias: 'The Shadow',
-    name: {
+    name: 'The Shadow',
+    names: {
         firstName: 'John',
         lastName: 'Doe',
         nickName: 'JD'

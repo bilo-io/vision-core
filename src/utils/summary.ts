@@ -3,8 +3,8 @@ import { ICharacter, ILocation } from "../models";
 
 export const characterSummary = (character: ICharacter): string => {
     let result = '';
-    let characterName: string = (character.name?.firstName || character.name?.nickName || character?.alias) as string;
-    let characterFullName: string = ((character.name?.firstName + ' ' + character.name?.lastName)).trim() || character.name?.nickName || character?.alias as string;
+    let characterName: string = (character.names?.firstName || character.names?.nickName || character?.name) as string;
+    let characterFullName: string = ((character.names?.firstName || '') + ' ' + (character.names?.lastName || '')).trim() || character.names?.nickName || character?.name as string;
 
     let isGenderOther = ['OTHER', 'PREFER_NOT_TO_SAY', 'NONE'].includes(character?.demographics?.gender as string)
     let pronoun = character.demographics?.gender === 'MALE' ? {
@@ -31,8 +31,8 @@ export const characterSummary = (character: ICharacter): string => {
         result += ' '
     }
 
-    if (character.alias !== characterFullName) {
-        result += `${pronoun.he} ${isGenderOther ? 'are' : 'is'} also known as ${character.alias}. `
+    if (character.name !== characterFullName) {
+        result += `${pronoun.he} ${isGenderOther ? 'are' : 'is'} also known as ${character.name}. `
     }
 
     if (character?.story) {

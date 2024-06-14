@@ -2,9 +2,9 @@ import { IMediaType } from "../galleries";
 
 export interface ICharacter {
     id: string;
-    alias?: string;
     type?: IMediaType;
-    name?: ICharacterName;
+    name: string,
+    names?: ICharacterName;
     traits?: ICharacterTraits;
     demographics?: ICharacterDemographics;
     identity?: ICharacterIdentity;
