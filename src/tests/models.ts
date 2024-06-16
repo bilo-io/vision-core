@@ -1,4 +1,26 @@
-import { ICharacter, IControls, IDialogue, IDocument, IGraph, ILocation, IProject } from '../models'
+import {
+    ICharacter,
+    IControls,
+    IDialogue,
+    IDocument,
+    IGraph,
+    ILocation,
+    IProject,
+    IWorkspace,
+} from '../models'
+
+const workspace: IWorkspace = {
+    id: 'user@email_workspace_name',
+    name: 'Custom Workspace',
+    users: [
+        // {
+        //     name: 'Bilo Lwabona',
+        //     email: 'bilo.lwabona@gmail.com',
+        //     image: '',
+        // }
+    ],
+    projectId: 'project-id'
+}
 
 const project: IProject = {
     id: 'project_001',

@@ -16,7 +16,7 @@ export interface IPermission {
     }
 }
 
-export interface Workspace extends IResource {
+export interface IWorkspace extends IResource {
     /** `image`: associated with this workspace */
     image?: string,
     /** `owner`: is essentially the `creator` of the workspace. Should transferrability be a feature, then ownership could be transfered to someone other than the original creator */

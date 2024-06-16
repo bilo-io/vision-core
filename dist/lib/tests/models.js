@@ -1,5 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const workspace = {
+    id: 'user@email_workspace_name',
+    name: 'Custom Workspace',
+    users: [
+    // {
+    //     name: 'Bilo Lwabona',
+    //     email: 'bilo.lwabona@gmail.com',
+    //     image: '',
+    // }
+    ],
+    projectId: 'project-id'
+};
 const project = {
     id: 'project_001',
     ref: 'ref_abc123',
