@@ -1,16 +1,12 @@
 import { IMediaType } from "../galleries";
-export interface ICharacter {
-    id: string;
+import { IResource } from "../resource";
+export interface ICharacter extends IResource {
     type?: IMediaType;
-    name: string;
     names?: ICharacterName;
     traits?: ICharacterTraits;
     demographics?: ICharacterDemographics;
     identity?: ICharacterIdentity;
     background?: ICharacterBackground;
-    projectId: string;
-    /** `galleryId`: the folder name in which this resource belongs */
-    galleryId?: string;
     images?: string[];
     story?: any | any[];
 }
