@@ -1,10 +1,8 @@
-export interface IProject {
-    /** `id`: the unique identifier of the Project */
-    id: string | number;
+import { IResource } from "./resource";
+
+export interface IProject extends IResource {
     /** `ref`: the unique ref to the Project */
     ref?: string,
-    /** `name`:  the human-friendly name of the project */
-    name: string;
     /** `templateId`: the template from which this project was generated  */
     templateId?: string;
     /** `audio`: is a selection of songs to give a flavour of the soundtrack */

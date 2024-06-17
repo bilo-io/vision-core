@@ -6,8 +6,20 @@ import {
     IGraph,
     ILocation,
     IProject,
+    IUser,
     IWorkspace,
 } from '../models'
+
+const now = new Date().toISOString();
+
+const user: IUser = {
+    id: 'bilo.lwabona@gmail.com',
+    name: 'Bilo Lwabona',
+    image: '',
+    authMethod: 'Google',
+    dateCreated: now,
+    dateUpdated: now,
+}
 
 const workspace: IWorkspace = {
     id: 'user@email_workspace_name',
@@ -26,6 +38,8 @@ const project: IProject = {
     ref: 'ref_abc123',
     name: 'Epic Adventure',
     templateId: 'tmpl_456',
+    dateCreated: now,
+    dateUpdated: now,
     audio: {
         theme: 'epic_theme.mp3',
         action: 'action_music.mp3',
@@ -65,6 +79,8 @@ const controls: IControls = {
     projectId: 'project_123',
     galleryId: 'gallery_456',
     name: 'Default Game Controls',
+    dateCreated: now,
+    dateUpdated: now,
     data: {
         STICK_LEFT: 'Move character',
         STICK_RIGHT: 'Camera control',
@@ -131,6 +147,8 @@ const character: ICharacter = {
     id: 'char_001',
     projectId: 'project_123',
     galleryId: 'gallery_456',
+    dateCreated: now,
+    dateUpdated: now,
     demographics: {
         sexuality: 'HETEROSEXUAL',
         age: 21,
@@ -169,6 +187,8 @@ const location: ILocation = {
     projectId: 'project_123',
     galleryId: 'gallery_456',
     name: 'Mystic Forest',
+    dateCreated: now,
+    dateUpdated: now,
     description: 'A dense, enchanted forest where magic and danger lurk behind every tree.',
     lore: 'The Mystic Forest has been a place of legend for centuries. Many believe it to be the home of ancient spirits and mythical creatures.',
     plot: 'The protagonist must navigate through the Mystic Forest to find the lost relic, encountering various challenges and allies along the way.',
@@ -241,6 +261,8 @@ const dialogue: IDialogue = {
     id: 'dlg_001',
     projectId: 'project_123',
     galleryId: 'gallery_456',
+    dateCreated: now,
+    dateUpdated: now,
     name: 'Opening Scene',
     type: 'Dialogue', // Assuming 'cutscene' is a valid IMediaType
     actors: [
@@ -290,6 +312,8 @@ const graph: IGraph = {
     id: 'graph_001',
     projectId: 'project_123',
     galleryId: 'gallery_456',
+    dateCreated: now,
+    dateUpdated: now,
     name: 'Character Relationships',
     data: {
         edges: [
@@ -364,6 +388,8 @@ const document: IDocument = {
     projectId: 'project_123',
     galleryId: 'gallery_456',
     name: 'Project Overview',
+    dateCreated: now,
+    dateUpdated: now,
     blocks: [
         {
             type: 'header',

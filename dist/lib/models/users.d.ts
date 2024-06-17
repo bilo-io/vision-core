@@ -1,10 +1,7 @@
+import { IResource } from "./resource";
 import { ISubscription } from "./subscriptions";
 export type AuthMethod = 'Email' | 'Google' | 'Facebook' | 'Apple' | 'Github';
-export interface IUser {
-    id?: string | number;
-    /** the display name of the user */
-    name?: string;
-    /** the SSO auth method used by the user */
+export interface IUser extends IResource {
     authMethod: AuthMethod;
     /** the profile picture of the user */
     image?: string;
