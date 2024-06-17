@@ -1,7 +1,7 @@
 import { IMediaType } from "../galleries";
-import { IResource } from "../resource";
+import { IProjectResource } from "../resource";
 
-export interface ISound extends IResource {
+export interface ISound extends IProjectResource {
     uri?: string;
     data?: string;
     type: IMediaType;

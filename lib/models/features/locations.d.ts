@@ -1,6 +1,6 @@
 import { IEditorJSBlock } from "./documents";
-import { IResource } from "../resource";
-export interface ILocation extends IResource {
+import { IProjectResource } from "../resource";
+export interface ILocation extends IProjectResource {
     description?: string;
     lore?: string;
     plot?: string;

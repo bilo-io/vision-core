@@ -1,7 +1,7 @@
 import { IMediaType } from "../galleries";
-import { IResource } from "../resource";
+import { IProjectResource } from "../resource";
 
-export interface ICharacter extends IResource {
+export interface ICharacter extends IProjectResource {
     type?: IMediaType;
     names?: ICharacterName;
     traits?: ICharacterTraits;

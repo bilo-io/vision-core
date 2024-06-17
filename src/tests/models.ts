@@ -19,7 +19,6 @@ const workspace: IWorkspace = {
         //     image: '',
         // }
     ],
-    projectId: 'project-id'
 }
 
 const project: IProject = {

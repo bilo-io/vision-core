@@ -10,7 +10,6 @@ const workspace = {
     //     image: '',
     // }
     ],
-    projectId: 'project-id'
 };
 const project = {
     id: 'project_001',

@@ -1,5 +1,5 @@
-import { IResource } from "../resource";
-export interface IDocument extends IResource {
+import { IProjectResource } from "../resource";
+export interface IDocument extends IProjectResource {
     /** `sections`:  the various sections the document has */
     blocks?: IEditorJSBlock[];
     /** `sectionCount`: the number of sections when the document gets returned in a list */

@@ -1,5 +1,5 @@
 import { IMediaType } from "../galleries";
-import { IResource } from "../resource";
+import { IProjectResource } from "../resource";
 
 // Custom types for additional properties
 export type IDialogueTone = 'SAD' | 'HAPPY' | 'ANGRY' | 'CALM' | 'EXCITED' | 'SERIOUS' | 'PLAYFUL' | 'CONFUSED' | 'GRATEFUL' | 'LOVING' | 'HUMOROUS' | 'SARCASTIC' | 'APOLOGETIC' | 'ENCOURAGING' | 'THOUGHTFUL' | 'FRIGHTENED' | 'SURPRISED' | 'DISAPPOINTED' | 'AMUSED' | 'ANXIOUS' | 'GRUMPY' | 'HOPEFUL';
@@ -10,7 +10,7 @@ export type IDialogueIntent = 'STATEMENT' | 'QUESTION' | 'COMMAND' | 'REQUEST' |
 
 export type IDialogueGesture = 'SMILE' | 'LAUGH' | 'CRY' | 'SHRUG' | 'NOD' | 'SHAKE HEAD' | 'WAVE' | 'POINT' | 'CLAP' | 'SIGH' | 'HUG' | 'HANDSHAKE' | 'APPLAUSE' | 'THUMBS UP' | 'THUMBS DOWN' | 'FIST PUMP';
 
-export interface IDialogue extends IResource {
+export interface IDialogue extends IProjectResource {
     type: IMediaType;
     actors?: {
         id: string;

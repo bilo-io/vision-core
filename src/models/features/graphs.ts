@@ -1,6 +1,6 @@
-import { IResource } from "../resource"
+import { IProjectResource } from "../resource"
 
-export interface IGraph extends IResource {
+export interface IGraph extends IProjectResource {
     data: {
         edges: IEdge[],
         nodes: INode[],

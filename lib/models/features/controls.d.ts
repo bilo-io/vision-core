@@ -1,5 +1,5 @@
-import { IResource } from "../resource";
-export interface IControls extends IResource {
+import { IProjectResource } from "../resource";
+export interface IControls extends IProjectResource {
     data: {
         [key in ControlType]?: string | {
             name: string;

@@ -1,6 +1,6 @@
-import { IResource } from "../resource";
+import { IProjectResource } from "../resource";
 
-export interface IChat extends IResource {
+export interface IChat extends IProjectResource {
     messages: IChatMessage[],
 }
 

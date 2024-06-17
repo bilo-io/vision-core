@@ -1,7 +1,7 @@
 import { IMediaType } from "../galleries";
-import { IResource } from "../resource";
+import { IProjectResource } from "../resource";
 
-export interface IImage extends IResource {
+export interface IImage extends IProjectResource {
     uri?: string;
     data?: string;
     type: IMediaType;
