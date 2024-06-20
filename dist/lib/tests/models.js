@@ -431,3 +431,25 @@ const document = {
     collectionId: 'collection_01',
     userPrompt: 'Provide a high-level summary of the project objectives and timeline.'
 };
+const subscription = {
+    name: 'Free',
+    id: 'free',
+    type: 'FREE',
+    period: 'MONTHLY',
+    limits: {
+        WORKSPACES: 0,
+        PROJECTS: 0,
+        COLLABORATORS: 0,
+        CHARACTERS: 0,
+        DIALOGUES: 0,
+        DOCUMENTS: 0,
+        LOCATIONS: 0,
+        CONTROLS: 0,
+        GRAPHS: 0,
+        AI_TEXT_GENERATION: 0,
+        AI_IMAGE_GENERATION: 0,
+        AI_AUDIO_GENERATION: 0,
+        AI_VIDEO_GENERATION: 0,
+        AI_3D_MODEL_GENERATION: 0
+    }
+};
