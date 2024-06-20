@@ -7,6 +7,7 @@ import {
     ILocation,
     IProject,
     ISubscription,
+    ISubscriptionRate,
     IUser,
     IWorkspace,
 } from '../models'
@@ -473,4 +474,21 @@ const subscription: ISubscription = {
         AI_VIDEO_GENERATION: 0,
         AI_3D_MODEL_GENERATION: 0
     }
+}
+
+const subscriptionRate: ISubscriptionRate = {
+    WORKSPACES: 1,
+    PROJECTS: 1,
+    COLLABORATORS: 0.5,
+    CHARACTERS: 0.1,
+    DIALOGUES: 0.1,
+    DOCUMENTS: 0.2,
+    LOCATIONS: 0.1,
+    CONTROLS: 0.2,
+    GRAPHS: 0.5,
+    AI_TEXT_GENERATION: 0.2,
+    AI_IMAGE_GENERATION: 0.5,
+    AI_AUDIO_GENERATION: 1,
+    AI_VIDEO_GENERATION: 2,
+    AI_3D_MODEL_GENERATION: 3
 }

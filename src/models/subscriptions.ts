@@ -4,7 +4,7 @@ export type SubscriptionPeriod = 'MONTHLY' | 'YEARLY';
 export interface ISubscription {
     /** 
      * ### ID
-     * The unique identifier of the customer subscription 
+     * The unique identifier of the customer subscription
      */
     id: string;
 
@@ -144,4 +144,93 @@ export interface ISubscriptionLimits {
      * Limit for the AI-generated 3D model media
      */
     AI_3D_MODEL_GENERATION: number
+}
+
+/**
+ * This is essentially how many dollars it costs to store one of these resources.
+ */
+export interface ISubscriptionRate {
+    /**
+     * ### Workspaces
+     * Cost to store one workspace.
+     */
+    WORKSPACES: number;
+
+    /**
+     * ### Projects
+     * Cost to store one project.
+     */
+    PROJECTS: number;
+
+    /**
+     * ### Collaborators
+     * Cost to store one collaborator.
+     */
+    COLLABORATORS: number;
+
+    /**
+     * ### Characters
+     * Cost to store one character.
+     */
+    CHARACTERS: number;
+
+    /**
+     * ### Dialogues
+     * Cost to store one dialogue.
+     */
+    DIALOGUES: number;
+
+    /**
+     * ### Documents
+     * Cost to store one document.
+     */
+    DOCUMENTS: number;
+
+    /**
+     * ### Locations
+     * Cost to store one location.
+     */
+    LOCATIONS: number;
+
+    /**
+     * ### Controls
+     * Cost to store one control.
+     */
+    CONTROLS: number;
+
+    /**
+     * ### Graphs
+     * Cost to store one graph.
+     */
+    GRAPHS: number;
+
+    /**
+     * ### AI Text Generation
+     * Cost to generate one text resource with AI.
+     */
+    AI_TEXT_GENERATION: number;
+
+    /**
+     * ### AI Image Generation
+     * Cost to generate one image resource with AI.
+     */
+    AI_IMAGE_GENERATION: number;
+
+    /**
+     * ### AI Audio Generation
+     * Cost to generate one audio resource with AI.
+     */
+    AI_AUDIO_GENERATION: number;
+
+    /**
+     * ### AI Video Generation
+     * Cost to generate one video resource with AI.
+     */
+    AI_VIDEO_GENERATION: number;
+
+    /**
+     * ### AI 3D Model Generation
+     * Cost to generate one 3D model resource with AI.
+     */
+    AI_3D_MODEL_GENERATION: number;
 }
