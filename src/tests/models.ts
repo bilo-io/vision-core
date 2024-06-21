@@ -7,7 +7,7 @@ import {
     ILocation,
     IProject,
     ISubscription,
-    ISubscriptionRate,
+    IRate,
     IUser,
     IWorkspace,
 } from '../models'
@@ -476,7 +476,7 @@ const subscription: ISubscription = {
     }
 }
 
-const subscriptionRate: ISubscriptionRate = {
+const subscriptionRate: IRate = {
     WORKSPACES: 1,
     PROJECTS: 1,
     COLLABORATORS: 0.5,

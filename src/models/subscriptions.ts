@@ -1,4 +1,4 @@
-export type SubscriptionType = 'FREE' | 'PROFESSIONAL' | 'PREMIUM' | 'ENTERPRISE';
+export type SubscriptionType = 'FREE' | 'PRO' | 'PREMIUM' | 'ENTERPRISE';
 export type SubscriptionPeriod = 'MONTHLY' | 'YEARLY';
 
 export interface ISubscription {
@@ -38,21 +38,27 @@ export interface ISubscription {
      * ### Start Date
      * The starting date of the subscription 
      */
-    startDate?: string;
+    startDate?: string | Date | null;
 
-    /** 
+    /**
      * ### End Date
      * The expiry/end date of the subscription 
      */
-    endDate?: string;
+    endDate?: string | Date | null;
 
-    /** 
+    /**
      * ### Credits
-     * The available credits the customer has on their subscription 
+     * The available credits the customer has on their subscription
      */
     credits?: number;
 
-    /** 
+    /**
+     * ### Last Top-up
+     * The last time credits were topped up for the customer, amount being based on their subscription
+     */
+    lastTopUp?: string | Date | null,
+
+    /**
      * ### Limits
      * The limitations for each feature 
      */
@@ -149,7 +155,7 @@ export interface ISubscriptionLimits {
 /**
  * This is essentially how many dollars it costs to store one of these resources.
  */
-export interface ISubscriptionRate {
+export interface IRate {
     /**
      * ### Workspaces
      * Cost to store one workspace.
