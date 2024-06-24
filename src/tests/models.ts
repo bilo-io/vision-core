@@ -21,11 +21,27 @@ const user: IUser = {
     authMethod: 'Google',
     dateCreated: now,
     dateUpdated: now,
+    subscription: {
+        credits: 0,
+        type: 'FREE',
+        period: 'MONTHLY',
+        lastTopUp: new Date().toISOString(),
+        startDate: new Date().toISOString(),
+        endDate: new Date().toISOString(),
+    }
 }
 
 const workspace: IWorkspace = {
     id: 'user@email_workspace_name',
     name: 'Custom Workspace',
+    subscription: {
+        credits: 0,
+        type: 'FREE',
+        period: 'MONTHLY',
+        lastTopUp: new Date().toISOString(),
+        startDate: new Date().toISOString(),
+        endDate: new Date().toISOString(),
+    },
     users: [
         // {
         //     name: 'Bilo Lwabona',
@@ -457,7 +473,6 @@ const subscription: ISubscription = {
     name: 'Free',
     id: 'free',
     type: 'FREE',
-    period: 'MONTHLY',
     limits: {
         WORKSPACES: 0,
         PROJECTS: 0,

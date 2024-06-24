@@ -1,4 +1,5 @@
 import { IResource } from "./resource";
+import { IUserSubscription } from "./subscriptions";
 import { IUser } from "./users";
 
 export interface IPermission {
@@ -25,4 +26,6 @@ export interface IWorkspace extends IResource {
     users: (IUser & IPermission)[],
     /** `isPublic`: grants public visibility of this workspace and all its projects */
     isPublic?: boolean,
+    /** `subscription`: is applied from the `user` account of the workspace `owner` */
+    subscription?: IUserSubscription,
 }

@@ -22,34 +22,6 @@ export interface ISubscription {
      */
     type: SubscriptionType;
     /**
-     * ### Period
-     * The period of the subscription.
-     * One of:
-     * - `'MONTHLY'`
-     * - `'YEARLY'`
-     */
-    period: SubscriptionPeriod;
-    /**
-     * ### Start Date
-     * The starting date of the subscription
-     */
-    startDate?: string | Date | null;
-    /**
-     * ### End Date
-     * The expiry/end date of the subscription
-     */
-    endDate?: string | Date | null;
-    /**
-     * ### Credits
-     * The available credits the customer has on their subscription
-     */
-    credits?: number;
-    /**
-     * ### Last Top-up
-     * The last time credits were topped up for the customer, amount being based on their subscription
-     */
-    lastTopUp?: string | Date | null;
-    /**
      * ### Limits
      * The limitations for each feature
      */
@@ -126,6 +98,46 @@ export interface ISubscriptionLimits {
      * Limit for the AI-generated 3D model media
      */
     AI_3D_MODEL_GENERATION: number;
+}
+export interface IUserSubscription {
+    /**
+     * ### Type
+     * The type of the subscription.
+     * One of:
+     * - `'FREE'`
+     * - `'PROFESSIONAL'`
+     * - `'PREMIUM'`
+     * - `'ENTERPRISE'`
+     */
+    type: SubscriptionType;
+    /**
+     * ### Period
+     * The period of the subscription.
+     * One of:
+     * - `'MONTHLY'`
+     * - `'YEARLY'`
+     */
+    period: SubscriptionPeriod;
+    /**
+     * ### Start Date
+     * The starting date of the subscription
+     */
+    startDate?: string | Date | null;
+    /**
+     * ### End Date
+     * The expiry/end date of the subscription
+     */
+    endDate?: string | Date | null;
+    /**
+     * ### Credits
+     * The available credits the customer has on their subscription
+     */
+    credits?: number;
+    /**
+     * ### Last Top-up
+     * The last time credits were topped up for the customer, amount being based on their subscription
+     */
+    lastTopUp?: string | Date | null;
 }
 /**
  * This is essentially how many dollars it costs to store one of these resources.
