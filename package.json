@@ -1,7 +1,7 @@
 {
   "name": "@vision/core",
   "author": "Bilo Lwabona",
-  "version": "0.1.9",
+  "version": "0.1.8",
   "description": "A Typescript library for frontend and backend shared code of the Vision platform.",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -21,7 +21,8 @@
     "test:unit": "jest",
     "test:coverage": "jest --coverage",
     "test:clearCache": "jest --clearCache",
-    "test:watch": "yarn test:unit --watchAll"
+    "test:watch": "yarn test:unit --watchAll",
+    "v:version": "node ./scripts/version.js"
   },
   "keywords": [],
   "license": "ISC",
