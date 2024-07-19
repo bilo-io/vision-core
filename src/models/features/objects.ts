@@ -1,7 +1,7 @@
 import { IEditorJSBlock } from "./documents";
 import { IProjectResource } from "../resource";
 
-export interface IObjects extends IProjectResource {
+export interface IObject extends IProjectResource {
     // the name of the object
     name: string;
     // the description of the object

@@ -1,7 +1,7 @@
 import { IEditorJSBlock } from "./documents";
 import { IProjectResource } from "../resource";
 
-export interface ICreatures extends IProjectResource {
+export interface ICreature extends IProjectResource {
     // the name of the creature
     name: string;
     // the description of the creature

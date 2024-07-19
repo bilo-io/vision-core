@@ -1,6 +1,6 @@
 import { IEditorJSBlock } from "./documents";
 import { IProjectResource } from "../resource";
-export interface ICreatures extends IProjectResource {
+export interface ICreature extends IProjectResource {
     name: string;
     description?: string;
     habitat?: string;

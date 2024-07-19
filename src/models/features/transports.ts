@@ -1,7 +1,7 @@
 import { IEditorJSBlock } from "./documents";
 import { IProjectResource } from "../resource";
 
-export interface ITransports extends IProjectResource {
+export interface ITransport extends IProjectResource {
     // the description of the vehicle
     description?: string;
     // lore of the transports, as a background to provide context
