@@ -11,7 +11,7 @@ export * from './features/documents';
 export * from './features/graphs';
 export * from './features/locations';
 export * from './features/objects';
-export * from './features/quests';
+export * from './features/stories';
 export * from './features/transports';
 export * from './blueprints';
 export * from './credits';

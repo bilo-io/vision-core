@@ -5,10 +5,10 @@ import {
     ICreature,
     ITransport,
     IObject,
-} from '../';
+} from '..';
 import { IProjectResource } from '../resource';
 
-export interface IQuest extends IProjectResource {
+export interface IStory extends IProjectResource {
     // The title of the quest
     title: string;
     // A brief description of the quest
@@ -28,7 +28,7 @@ export interface IQuest extends IProjectResource {
     // Objects that are relevant to the quest
     objects?: IObject[];
     // The status of the quest (e.g., planned, in progress, completed)
-    status: 'PLANNED' | 'IN_PROGRESS' | 'COMPLETED';
+    status?: 'PLANNED' | 'IN_PROGRESS' | 'COMPLETED';
     // The reward for completing the quest
     reward?: string;
     // Images associated with the quest

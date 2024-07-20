@@ -29,7 +29,7 @@ __exportStar(require("./features/documents"), exports);
 __exportStar(require("./features/graphs"), exports);
 __exportStar(require("./features/locations"), exports);
 __exportStar(require("./features/objects"), exports);
-__exportStar(require("./features/quests"), exports);
+__exportStar(require("./features/stories"), exports);
 __exportStar(require("./features/transports"), exports);
 // Misc
 __exportStar(require("./blueprints"), exports);
