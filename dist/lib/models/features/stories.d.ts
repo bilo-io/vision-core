@@ -1,6 +1,6 @@
 import { ICharacter, IEditorJSBlock, ILocation, ICreature, ITransport, IObject } from '..';
 import { IProjectResource } from '../resource';
-export interface IStory extends IProjectResource {
+export interface ISegment extends IProjectResource {
     title: string;
     description: string;
     lore?: string;

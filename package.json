@@ -1,7 +1,7 @@
 {
   "name": "@vision/core",
   "author": "Bilo Lwabona",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "A Typescript library for frontend and backend shared code of the Vision platform.",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",

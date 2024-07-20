@@ -8,7 +8,7 @@ import {
 } from '..';
 import { IProjectResource } from '../resource';
 
-export interface IStory extends IProjectResource {
+export interface ISegment extends IProjectResource {
     // The title of the quest
     title: string;
     // A brief description of the quest
