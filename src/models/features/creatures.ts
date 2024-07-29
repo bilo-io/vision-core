@@ -10,8 +10,8 @@ export interface ICreature extends IProjectResource {
     habitat?: string;
     // diet of the creature
     diet?: string;
-    // behavior or traits of the creature
-    behavior?: string;
+    // behaviour or traits of the creature
+    behaviour?: string;
     // abilities or special powers
     abilities?: string[];
     // images to identify the creature

@@ -13,14 +13,6 @@ export interface IDocument extends IProjectResource {
     userPrompt?: string;
 }
 
-// export interface Section {
-//     name: string;
-//     type: 'Text' | 'Image' | 'Audio' | 'Video';
-//     data: any;
-//     displayOrder: number;
-//     children?: Section[];
-// }
-
 // #region CUSTOM TYPES
 // NB: These are created with the help of sample data and GPT
 export type IEditorJSBlock =

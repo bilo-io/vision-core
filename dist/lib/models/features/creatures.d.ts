@@ -5,7 +5,7 @@ export interface ICreature extends IProjectResource {
     description?: string;
     habitat?: string;
     diet?: string;
-    behavior?: string;
+    behaviour?: string;
     abilities?: string[];
     images?: string[];
     lore?: string;
