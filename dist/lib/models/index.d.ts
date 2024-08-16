@@ -23,3 +23,4 @@ export * from './features/transports';
 export * from './blueprints';
 export * from './galleries';
 export * from './generators';
+export * from './entertainment';
