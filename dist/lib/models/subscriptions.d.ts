@@ -129,6 +129,11 @@ export interface IUserSubscription {
      */
     endDate?: string | Date | null;
     /**
+     * ### Is Auto Renew
+     * Whether or not the subscription should be automatically renewed.
+     */
+    isAutoRenew?: boolean;
+    /**
      * ### Credits
      * The available credits the customer has on their subscription
      */

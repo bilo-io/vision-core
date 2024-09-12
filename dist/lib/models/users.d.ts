@@ -17,8 +17,8 @@ export interface IUser extends IResource {
     subscription?: IUserSubscription;
     /** `preferences`: the user-preferred configurations of the application */
     preferences?: {
-        language: string;
-        theme: string;
+        language?: string;
+        theme?: string;
     };
     /** `region`: the region information of the user */
     region?: {
