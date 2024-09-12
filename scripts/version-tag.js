@@ -16,16 +16,16 @@ if (!version) {
 
 try {
     // Create the Git tag
-    execSync(`git tag v${version}`, {
+    execSync(`git tag ${version}`, {
         stdio: 'inherit'
     });
 
     // Push the tag to the repository
-    execSync(`git push origin v${version}`, {
+    execSync(`git push origin ${version}`, {
         stdio: 'inherit'
     });
 
-    console.log(`Git tag v${version} created and pushed.`);
+    console.log(`Git tag ${version} created and pushed.`);
 } catch (error) {
     console.error('Error creating or pushing Git tag:', error.message);
     process.exit(1);
