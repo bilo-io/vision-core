@@ -98,12 +98,12 @@ const updateVersion = (type) => {
             version: newVersion
         }, null, 2);
 
-        fs.writeFile(path.resolve(__dirname, '../public/version.json'), versionData, (err) => {
+        fs.writeFile(path.resolve(__dirname, '../dist/version.json'), versionData, (err) => {
             if (err) {
-                console.error('❌ Error writing to public/version.json');
+                console.error('❌ Error writing to dist/version.json');
                 throw err;
             }
-            console.log('✅ Data written to public/version.json');
+            console.log('✅ Data written to dist/version.json');
         });
 
         fs.writeFile(path.resolve(__dirname, '../src/version.json'), versionData, (err) => {
