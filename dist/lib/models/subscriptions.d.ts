@@ -1,5 +1,5 @@
 export type SubscriptionType = 'FREE' | 'PRO' | 'PREMIUM' | 'ENTERPRISE';
-export type SubscriptionPeriod = 'MONTHLY' | 'YEARLY';
+export type SubscriptionPeriod = 'MONTHLY' | 'YEARLY' | 'MONTH' | 'YEAR' | '2YEAR';
 export interface ISubscription {
     /**
      * ### ID
