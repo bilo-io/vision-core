@@ -11,6 +11,8 @@ mkdir dist
 cp package.json ./dist
 cp -r lib ./dist
 
+node srcripts/version.js
+
 echo "
       .__       .__
 ___  _|__| _____|__| ____   ____             ____  ___________   ____
