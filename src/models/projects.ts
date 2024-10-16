@@ -6,6 +6,14 @@ export interface IProject extends IResource {
     /** `templateId`: the template from which this project was generated  */
     templateId?: string;
     /** `audio`: is a selection of songs to give a flavour of the soundtrack */
+    soundtrack?: {
+        /** `url`: the path to the audio file */
+        url: string;
+        /** `name`: the display name of the audio file */
+        name: string;
+        /** `duration`: the length of the audio file in seconds */
+        duration?: number;
+    };
     audio?: {
         /** `theme` is the classic song of this project */
         theme?: string,

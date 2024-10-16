@@ -1,7 +1,9 @@
 export type IFeatureStatus = 'concept' | 'pre-alpha' | 'alpha' | 'beta' | 'ready';
 
 export interface IFeature {
-    /** `key` is the identifier of the feature */
+    /** `id` is the unique identifier of the feature */
+    id: string;
+    /** `key` is a secondary identifier of the feature */
     key: string;
     /** `isActive` is a boolean to determine whether the feature is available or under maintenance */
     isActive: boolean;
